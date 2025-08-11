@@ -1,33 +1,26 @@
 // Theme Toggle
-const themeToggle = document.getElementById('theme-toggle');
+const toggle = document.getElementById('themeToggle');
 const body = document.body;
 
-if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark');
-    themeToggle.textContent = '☀️';
-}
-
-themeToggle.addEventListener('click', () => {
+toggle.addEventListener('click', () => {
     body.classList.toggle('dark');
-    if (body.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        themeToggle.textContent = '☀️';
-    } else {
-        localStorage.setItem('theme', 'light');
-        themeToggle.textContent = '🌙';
-    }
+    body.classList.toggle('light');
+    toggle.innerHTML = body.classList.contains('dark') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 });
 
-// Scroll Animations
-const fadeSections = document.querySelectorAll('.fade-section');
-const observer = new IntersectionObserver(entries => {
+// Fade-in on Scroll
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.1 };
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
+}, appearOptions);
 
-fadeSections.forEach(section => {
-    observer.observe(section);
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
 });
