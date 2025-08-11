@@ -5,95 +5,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Daniel Dass - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+<body class="light">
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Hello, I’m <span class="highlight">Abhishek Daniel Dass</span></h1>
-            <p>AI/ML Engineer specializing in Machine Learning, Deep Learning, Computer Vision, and Large Language Models — passionate about building real-world AI solutions.</p>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-        <div class="hero-photo">
-            <img src="profile.jpg" alt="Profile Photo Placeholder">
-        </div>
-    </header>
+<header>
+    <div></div>
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</header>
 
-    <!-- Skills -->
-    <section id="skills" class="fade-section">
-        <h2>Skills</h2>
-        <div class="skill-group">
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>ABHISHEK DANIEL DASS</h1>
+        <h2>AI/ML & Data Science Enthusiast</h2>
+        <p>
+            Passionate about Machine Learning, Artificial Intelligence, and Data Analysis — building real-world solutions and insightful visualizations.
+            Skilled in Python, SQL, and data visualization tools like Tableau.
+        </p>
+        <div class="cta-buttons">
+            <a href="Abhishek_Daniel_Resume.pdf" class="btn" download>Download Resume</a>
+            <div class="social-icons">
+                <a href="mailto:abhishekdaniel1411@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919345493745"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/abhishek-daniel-dass-3a3b381a5" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="placeholder.jpg" alt="Portrait of Abhishek Daniel Dass">
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about fade-in">
+    <h2>About Me</h2>
+    <p>
+        I am an AI/ML and Data Science enthusiast with experience in building solutions that combine Machine Learning, Artificial Intelligence, and Data Analysis.
+        During my internship at Allytriz Technologies, I worked on fine-tuning Large Language Models (LLMs) and developing real-time computer vision systems.
+    </p>
+    <p>
+        I have a strong foundation in Python, SQL, and data visualization, with proficiency in tools such as Tableau and Power BI.
+        My experience spans from data collection and preprocessing to predictive modeling and creating interactive dashboards.
+        I am passionate about crafting AI-driven solutions that are efficient, scalable, and impactful in real-world applications.
+    </p>
+</section>
+
+<!-- Skills Section -->
+<section class="skills fade-in">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-category">
             <h3>Programming & Tools</h3>
-            <p>Python, SQL (PostgreSQL, MySQL), GitHub</p>
-        </div>
-        <div class="skill-group">
-            <h3>Data Science & AI</h3>
-            <p>Machine Learning, Deep Learning, Neural Networks, Computer Vision, NLP, LLMs</p>
-        </div>
-        <div class="skill-group">
-            <h3>Data Processing & Analysis</h3>
-            <p>Data Collection, Preprocessing, Visualization (Matplotlib, Seaborn)</p>
-        </div>
-        <div class="skill-group">
-            <h3>Business Intelligence</h3>
-            <p>Tableau, Power BI, Streamlit, Plotly Dash</p>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="fade-section">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>AI/ML Intern – Allytriz Technologies</h3>
-            <p>Feb 2025 – Apr 2025 | Chennai, India</p>
             <ul>
-                <li>Developed and fine-tuned LLMs for NLP applications, improving accuracy and efficiency.</li>
-                <li>Built a real-time computer vision system for action recognition with low latency.</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fas fa-database"></i> SQL (PostgreSQL, MySQL)</li>
+                <li><i class="fab fa-github"></i> GitHub</li>
             </ul>
         </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="fade-section">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Marketing Insights Dashboard</h3>
-            <p>Interactive dashboard analyzing customer behavior, sales trends, and marketing performance.</p>
+        <div class="skill-category">
+            <h3>Data Science & Artificial Intelligence</h3>
+            <ul>
+                <li><i class="fas fa-brain"></i> Machine Learning</li>
+                <li><i class="fas fa-project-diagram"></i> Deep Learning</li>
+                <li><i class="fas fa-eye"></i> Computer Vision</li>
+                <li><i class="fas fa-language"></i> Natural Language Processing</li>
+                <li><i class="fas fa-robot"></i> Large Language Models</li>
+            </ul>
         </div>
-        <div class="card">
-            <h3>Credit Card Consumption Prediction</h3>
-            <p>Regression models to forecast credit card usage based on customer financial behavior.</p>
+
+        <div class="skill-category">
+            <h3>Business Intelligence</h3>
+            <ul>
+                <li><i class="fas fa-chart-line"></i> Tableau</li>
+                <li><i class="fas fa-chart-pie"></i> Power BI</li>
+                <li><i class="fas fa-code"></i> Streamlit</li>
+               
+            </ul>
         </div>
-        <div class="card">
-            <h3>Falcon 9 Booster Landing Prediction</h3>
-            <p>Machine learning models predicting rocket booster landing success using SpaceX data.</p>
+    </div>
+</section>
+  
+ <!-- Experience Section -->
+<section class="experience fade-in">
+    <h2>Experience</h2>
+    <div class="experience-card">
+        <h3>AI/ML Intern – Allytriz Technologies</h3>
+        <span class="experience-date">Feb 2025 – Apr 2025</span>
+        <ul>
+            <li>Developed and fine-tuned Large Language Models (LLMs) for task-specific optimization.</li>
+            <li>Built a real-time computer vision system with low latency and high accuracy.</li>
+        </ul>
+    </div>
+</section>
+<!-- Education Section -->
+<section class="education fade-in">
+    <h2>Education</h2>
+
+    <div class="timeline">
+
+        <!-- MSc -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2022 – 2024</div>
+            <div class="timeline-content">
+                <h3>M.Sc. Physics</h3>
+                <p class="education-meta">University of Cologne, Cologne, Germany
+                  <em class="status-note">(Coursework completed, degree not conferred)</em>
+</p>
+                <ul>
+                    <li>Specialized in Quantum Computation and Quantum Information Theory, developing advanced understanding of quantum algorithms and computational methods.</li>
+                    <li>Participated in workshops and seminars on computational physics, quantum computation, high-energy physics, and astrophysics, enhancing both theoretical and practical perspectives.</li>
+                </ul>
+            </div>
         </div>
-    </section>
 
-    <!-- Education -->
-    <section id="education" class="fade-section">
-        <h2>Education</h2>
-        <p>B.Sc. in Physics – Madras Christian College (CGPA: 8.517)</p>
-        <p>HSLC – Anjuham Higher Secondary School (85%)</p>
-        <p>SSLC – Anjuham Higher Secondary School (95%)</p>
-    </section>
+        <!-- BSc -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2019 – 2022</div>
+            <div class="timeline-content">
+                <h3>B.Sc. Physics</h3>
+                <p class="education-meta">Madras Christian College, Chennai, India</p>
+                <ul>
+                    <li>CGPA: 8.517 / 10.0</li>
+                    <li>Completed a virtual internship in Nuclear Physics at Old Dominion University, Virginia, USA (July 2020), gaining exposure to international research practices.</li>
+                    <li>Served as IPR Coordinator for the Institute Innovation Club (MCC IIC) during the 2021–2022 academic year, contributing to innovation and intellectual property awareness initiatives.</li>
+                </ul>
+            </div>
+        </div>
 
-    <!-- Contact -->
-    <section id="contact" class="fade-section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:abhishekdaniel1411@gmail.com">abhishekdaniel1411@gmail.com</a></p>
-        <p>Phone: +91 9345493745</p>
-        <p>
-            <a href="https://linkedin.com/in/abhishek-daniel-dass-3a3b381a5" target="_blank">LinkedIn</a>
-        </p>
-    </section>
+        <!-- HSLC -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2018 - 2019</div>
+            <div class="timeline-content">
+                <h3>HSLC</h3>
+                <p class="education-meta">Anjuham Higher Secondary School, Chennai, India</p>
+                <ul>
+                    <li>Percentage: 85%</li>
+                </ul>
+            </div>
+        </div>
 
-    <footer>
-        <p>© 2025 Abhishek Daniel Dass</p>
-    </footer>
+        <!-- SSLC -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2016 - 2017</div>
+            <div class="timeline-content">
+                <h3>SSLC</h3>
+                <p class="education-meta">Anjuham Higher Secondary School, Chennai, India</p>
+                <ul>
+                    <li>Percentage: 95%</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- Languages Section -->
+<section class="languages fade-in">
+    <h2>Languages</h2>
+
+    <div class="language-row">
+        <div class="language-info">
+            <h3>English</h3>
+            <small>C1 Proficiency</small>
+        </div>
+        <div class="language-skills">
+            <i class="fas fa-pencil-alt shaded"></i>
+            <i class="fas fa-book shaded"></i>
+            <i class="fas fa-comment shaded"></i>
+            <i class="fas fa-headphones shaded"></i>
+        </div>
+    </div>
+
+    <div class="language-row">
+        <div class="language-info">
+            <h3>Telugu</h3>
+            <small>Native</small>
+        </div>
+        <div class="language-skills">
+            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-book"></i>
+            <i class="fas fa-comment shaded"></i>
+            <i class="fas fa-headphones shaded"></i>
+        </div>
+    </div>
+
+    <div class="language-row">
+        <div class="language-info">
+            <h3>Tamil</h3>
+            <small>Bilingual</small>
+        </div>
+        <div class="language-skills">
+            <i class="fas fa-pencil-alt shaded"></i>
+            <i class="fas fa-book shaded"></i>
+            <i class="fas fa-comment shaded"></i>
+            <i class="fas fa-headphones shaded"></i>
+        </div>
+    </div>
+
+    <div class="language-row">
+        <div class="language-info">
+            <h3>German</h3>
+            <small>Beginner</small>
+        </div>
+        <div class="language-skills">
+            <i class="fas fa-pencil-alt shaded"></i>
+            <i class="fas fa-book shaded"></i>
+            <i class="fas fa-comment"></i>
+            <i class="fas fa-headphones"></i>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
